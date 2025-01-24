@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card">
+    <h2 class="text-center">Update Contact Details</h2>
+
+
+    <form class="p-4">
+        <div class="form-group mb-3">
+            <label for="exampleInputEmail1" class="form-label">First Name <span class="text-danger fw-2"><b>*</b></span></label>
+            <input type="email" class="form-control" placeholder="Enter Your First Name" [(ngModel)]="contactData.Firstname" name="Firstname">
+        </div>
+        <div class="form-group mb-3">
+            <label for="exampleInputEmail1" class="form-label">Last Name <span class="text-danger fw-2"><b>*</b></span></label>
+            <input type="email" class="form-control" placeholder="Enter Your Last Name" [(ngModel)]="contactData.Lastname" name="Lastname">
+        </div>
+        <div class="form-group mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email <span class="text-danger fw-2"><b>*</b></span></label>
+            <input type="email" class="form-control" placeholder="Enter Your Email" [(ngModel)]="contactData.Email" name="Email">
+        </div>
+        <div class="form-group mb-3">
+            <label for="exampleInputEmail1" class="form-label">Phone Number <span class="text-danger fw-2"><b>*</b></span></label>
+            <input type="email" class="form-control" placeholder="Enter Your Phone Number" maxlength="10" [(ngModel)]="contactData.PhoneNumber" name="PhoneNumber">
+        </div>
+        <div class="form-group mb-3">
+            <label for="exampleInputEmail1" class="form-label">City <span class="text-danger fw-2"><b>*</b></span></label>
+            <input type="email" class="form-control" placeholder="Enter Your City Name" [(ngModel)]="contactData.City" name="City">
+        </div>
+        <div class="mt-2 text-center">
+        <button type="submit" class="btn btn-primary" (click)="update()">Update</button>
+        <button type="submit" class="btn btn-success m-2" routerLink="/contactList">Back</button>
+    </div>
+    </form>
+    </div>
+</div>

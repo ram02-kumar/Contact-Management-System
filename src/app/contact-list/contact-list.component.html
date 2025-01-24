@@ -1,0 +1,46 @@
+<!-- page loader -->
+ <app-page-loader *ngIf="isLoading"></app-page-loader>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <h1 class="contact">Contact Management System</h1>
+  </div>
+    <div class="text-nowrap">
+        <button class="btn btn-success" routerLink="/addcontact">Add Contact</button>&nbsp;
+        <button class="btn btn-danger" routerLink="/login-signup" (click)="logout()">Logout</button>
+    </div>
+</nav>
+<!-- Search Filter -->
+ <div class="form-outline p-2 container">
+  <input type="search" [(ngModel)]="searchText" class="form-control fw-bold" placeholder="search">
+ </div>
+<!-- Table Section -->
+
+<table class="table table-striped mt-2">
+  <thead>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">City</th>
+      <th scope="col">Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+   
+    <tr *ngFor="let contact of data | filter : searchText">
+      <td>{{contact.Firstname}}</td>
+      <td>{{contact.Lastname}}</td>
+      <td>{{contact.Email}}</td>
+      <td>{{contact.PhoneNumber}}</td>
+      <td>{{contact.City}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square me-3 " style="color: blue;cursor: pointer;" routerLink="/updateContact/{{contact.id}}"></i>
+        <i class="fa-solid fa-trash" style="color: red;cursor: pointer;" (click)="delete(contact.id)"></i>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>

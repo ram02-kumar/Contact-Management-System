@@ -1,0 +1,7 @@
+.card{
+    top: 60%;
+    left: 40%;
+    width: 435px;
+    border: 2px solid black;
+    justify-content: center;
+}

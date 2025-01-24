@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": "2df4",
+      "Firstname": "ram",
+      "Lastname": "kumar",
+      "Email": "Ram@gmail.com",
+      "PhoneNumber": "456789098",
+      "City": "Thiruvallur"
+    },
+    {
+      "id": "11bd",
+      "Firstname": "dhanush",
+      "Lastname": "s",
+      "Email": "dhanush@gmail.com",
+      "PhoneNumber": "2345234512",
+      "City": "chennai"
+    }
+  ],
+  "signup": [
+    {
+      "id": "0066",
+      "name": "ramkumar",
+      "email": "ram@gmail.comm",
+      "password": "Pass@123"
+    },
+    {
+      "id": "4608",
+      "name": "Lokesh V",
+      "email": "lokesh@gmail.com",
+      "password": "Lokesh@123"
+    },
+    {
+      "id": "1523",
+      "name": "ramkumar",
+      "email": "ram@gmail.com",
+      "password": "Ram@123"
+    }
+  ]
+}
